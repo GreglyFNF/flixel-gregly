@@ -1606,6 +1606,15 @@ class FlxCamera extends FlxBasic
 	}
 
 	/**
+	 * Sets the filter array to be applied to the camera.
+	 */
+	@:deprecated("setFilters() is deprecated, use the filters array instead")
+	public function setFilters(filters:Array<BitmapFilter>):Void
+	{
+		this.filters = filters;
+	}
+
+	/**
 	 * Copy the bounds, focus object, and `deadzone` info from an existing camera.
 	 *
 	 * @param   Camera  The camera you want to copy from.
